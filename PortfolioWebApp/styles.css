@@ -338,8 +338,10 @@ section {
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem;
+  gap: 0;
   justify-content: space-around;
+  margin: 0;
+  padding: 0;
 }
 
 article {
@@ -362,12 +364,14 @@ article .icon {
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+
 }
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 90%; /* Reduce width, adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 200px; /* Set a maximum width */
 }
 
 .project-title {
